@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "json-columnar-compression-csharp/1.0.0": {
+        "runtime": {
+          "json-columnar-compression-csharp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "json-columnar-compression-csharp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

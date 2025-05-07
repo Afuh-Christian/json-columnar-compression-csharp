@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>json_columnar_compression_csharp</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Json Columnar Compression</Title>
+    <Description>- Efficiently converts JSON to columnar format and back, enabling faster transmission and reduced storage.
+- This approach is especially beneficial when working with large datasets .
+- You can provide JSON in any structure or format.</Description>
+    <Company>Afuh Christian Forkoum</Company>
+    <Authors>Afuh Christian Forkoum</Authors>
+    <PackageIcon>Frame 1.jpg</PackageIcon>
+    <RepositoryUrl>https://github.com/Afuh-Christian/json-columnar-compression-csharp</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\Downloads\Frame 1.jpg">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

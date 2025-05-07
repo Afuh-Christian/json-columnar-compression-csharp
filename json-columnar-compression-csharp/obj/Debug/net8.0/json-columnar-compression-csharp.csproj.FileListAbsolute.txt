@@ -1,0 +1,11 @@
+C:\Users\USER\Stuff\json-columnar-compression-csharp\json-columnar-compression-csharp\bin\Debug\net8.0\json-columnar-compression-csharp.deps.json
+C:\Users\USER\Stuff\json-columnar-compression-csharp\json-columnar-compression-csharp\bin\Debug\net8.0\json-columnar-compression-csharp.dll
+C:\Users\USER\Stuff\json-columnar-compression-csharp\json-columnar-compression-csharp\bin\Debug\net8.0\json-columnar-compression-csharp.pdb
+C:\Users\USER\Stuff\json-columnar-compression-csharp\json-columnar-compression-csharp\obj\Debug\net8.0\json-columnar-compression-csharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Stuff\json-columnar-compression-csharp\json-columnar-compression-csharp\obj\Debug\net8.0\json-columnar-compression-csharp.AssemblyInfoInputs.cache
+C:\Users\USER\Stuff\json-columnar-compression-csharp\json-columnar-compression-csharp\obj\Debug\net8.0\json-columnar-compression-csharp.AssemblyInfo.cs
+C:\Users\USER\Stuff\json-columnar-compression-csharp\json-columnar-compression-csharp\obj\Debug\net8.0\json-columnar-compression-csharp.csproj.CoreCompileInputs.cache
+C:\Users\USER\Stuff\json-columnar-compression-csharp\json-columnar-compression-csharp\obj\Debug\net8.0\json-columnar-compression-csharp.dll
+C:\Users\USER\Stuff\json-columnar-compression-csharp\json-columnar-compression-csharp\obj\Debug\net8.0\refint\json-columnar-compression-csharp.dll
+C:\Users\USER\Stuff\json-columnar-compression-csharp\json-columnar-compression-csharp\obj\Debug\net8.0\json-columnar-compression-csharp.pdb
+C:\Users\USER\Stuff\json-columnar-compression-csharp\json-columnar-compression-csharp\obj\Debug\net8.0\ref\json-columnar-compression-csharp.dll

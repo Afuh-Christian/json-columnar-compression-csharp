@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>json-columnar-compression-csharp</id>
+    <version>1.0.0</version>
+    <title>Json Columnar Compression</title>
+    <authors>Afuh Christian Forkoum</authors>
+    <icon>Frame 1.jpg</icon>
+    <readme>README.md</readme>
+    <description>- Efficiently converts JSON to columnar format and back, enabling faster transmission and reduced storage.
+- This approach is especially beneficial when working with large datasets .
+- You can provide JSON in any structure or format.</description>
+    <repository type="git" url="https://github.com/Afuh-Christian/json-columnar-compression-csharp" />
+    <dependencies>
+      <group targetFramework="net8.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\USER\Stuff\json-columnar-compression-csharp\json-columnar-compression-csharp\bin\Debug\net8.0\json-columnar-compression-csharp.dll" target="lib\net8.0\json-columnar-compression-csharp.dll" />
+    <file src="C:\Users\USER\Stuff\json-columnar-compression-csharp\json-columnar-compression-csharp\README.md" target="\README.md" />
+    <file src="C:\Users\USER\Downloads\Frame 1.jpg" target="\Frame 1.jpg" />
+  </files>
+</package>

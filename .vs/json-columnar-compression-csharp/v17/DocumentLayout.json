@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\USER\\Stuff\\json-columnar-compression-csharp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B8FA74AC-55BB-495B-960F-29326572B047}|json-columnar-compression-csharp\\json-columnar-compression-csharp.csproj|c:\\users\\user\\stuff\\json-columnar-compression-csharp\\json-columnar-compression-csharp\\json-columnar-compression-csharp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B8FA74AC-55BB-495B-960F-29326572B047}|json-columnar-compression-csharp\\json-columnar-compression-csharp.csproj|solutionrelative:json-columnar-compression-csharp\\json-columnar-compression-csharp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8FA74AC-55BB-495B-960F-29326572B047}|json-columnar-compression-csharp\\json-columnar-compression-csharp.csproj|c:\\users\\user\\stuff\\json-columnar-compression-csharp\\json-columnar-compression-csharp\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{B8FA74AC-55BB-495B-960F-29326572B047}|json-columnar-compression-csharp\\json-columnar-compression-csharp.csproj|solutionrelative:json-columnar-compression-csharp\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8FA74AC-55BB-495B-960F-29326572B047}|json-columnar-compression-csharp\\json-columnar-compression-csharp.csproj|c:\\users\\user\\stuff\\json-columnar-compression-csharp\\json-columnar-compression-csharp\\jsoncolumnarcompression.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8FA74AC-55BB-495B-960F-29326572B047}|json-columnar-compression-csharp\\json-columnar-compression-csharp.csproj|solutionrelative:json-columnar-compression-csharp\\jsoncolumnarcompression.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8FA74AC-55BB-495B-960F-29326572B047}|json-columnar-compression-csharp\\json-columnar-compression-csharp.csproj|c:\\users\\user\\stuff\\json-columnar-compression-csharp\\json-columnar-compression-csharp\\json-columnar-compression-csharp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{B8FA74AC-55BB-495B-960F-29326572B047}|json-columnar-compression-csharp\\json-columnar-compression-csharp.csproj|solutionrelative:json-columnar-compression-csharp\\json-columnar-compression-csharp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\USER\\Stuff\\json-columnar-compression-csharp\\json-columnar-compression-csharp\\README.md",
+              "RelativeDocumentMoniker": "json-columnar-compression-csharp\\README.md",
+              "ToolTip": "C:\\Users\\USER\\Stuff\\json-columnar-compression-csharp\\json-columnar-compression-csharp\\README.md",
+              "RelativeToolTip": "json-columnar-compression-csharp\\README.md",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-05-07T10:37:01.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "json-columnar-compression-csharp",
+              "DocumentMoniker": "C:\\Users\\USER\\Stuff\\json-columnar-compression-csharp\\json-columnar-compression-csharp\\json-columnar-compression-csharp.csproj",
+              "RelativeDocumentMoniker": "json-columnar-compression-csharp\\json-columnar-compression-csharp.csproj",
+              "ToolTip": "C:\\Users\\USER\\Stuff\\json-columnar-compression-csharp\\json-columnar-compression-csharp\\json-columnar-compression-csharp.csproj",
+              "RelativeToolTip": "json-columnar-compression-csharp\\json-columnar-compression-csharp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-07T10:28:13.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "json-columnar-compression-csharp",
+              "DocumentMoniker": "C:\\Users\\USER\\Stuff\\json-columnar-compression-csharp\\json-columnar-compression-csharp\\json-columnar-compression-csharp.csproj",
+              "RelativeDocumentMoniker": "json-columnar-compression-csharp\\json-columnar-compression-csharp.csproj",
+              "ToolTip": "C:\\Users\\USER\\Stuff\\json-columnar-compression-csharp\\json-columnar-compression-csharp\\json-columnar-compression-csharp.csproj",
+              "RelativeToolTip": "json-columnar-compression-csharp\\json-columnar-compression-csharp.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-07T10:28:17.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "JsonColumnarCompression.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Stuff\\json-columnar-compression-csharp\\json-columnar-compression-csharp\\JsonColumnarCompression.cs",
+              "RelativeDocumentMoniker": "json-columnar-compression-csharp\\JsonColumnarCompression.cs",
+              "ToolTip": "C:\\Users\\USER\\Stuff\\json-columnar-compression-csharp\\json-columnar-compression-csharp\\JsonColumnarCompression.cs",
+              "RelativeToolTip": "json-columnar-compression-csharp\\JsonColumnarCompression.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T10:27:52.136Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
