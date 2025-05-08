@@ -15,6 +15,7 @@
     <PackageIcon>Frame 1.jpg</PackageIcon>
     <RepositoryUrl>https://github.com/Afuh-Christian/json-columnar-compression-csharp</RepositoryUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>

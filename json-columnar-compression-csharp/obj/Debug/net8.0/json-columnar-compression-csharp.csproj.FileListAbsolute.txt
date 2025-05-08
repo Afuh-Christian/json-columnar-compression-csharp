@@ -5,6 +5,7 @@ C:\Users\USER\Stuff\json-columnar-compression-csharp\json-columnar-compression-c
 C:\Users\USER\Stuff\json-columnar-compression-csharp\json-columnar-compression-csharp\obj\Debug\net8.0\json-columnar-compression-csharp.AssemblyInfoInputs.cache
 C:\Users\USER\Stuff\json-columnar-compression-csharp\json-columnar-compression-csharp\obj\Debug\net8.0\json-columnar-compression-csharp.AssemblyInfo.cs
 C:\Users\USER\Stuff\json-columnar-compression-csharp\json-columnar-compression-csharp\obj\Debug\net8.0\json-columnar-compression-csharp.csproj.CoreCompileInputs.cache
+C:\Users\USER\Stuff\json-columnar-compression-csharp\json-columnar-compression-csharp\obj\Debug\net8.0\json-columnar-compression-csharp.sourcelink.json
 C:\Users\USER\Stuff\json-columnar-compression-csharp\json-columnar-compression-csharp\obj\Debug\net8.0\json-columnar-compression-csharp.dll
 C:\Users\USER\Stuff\json-columnar-compression-csharp\json-columnar-compression-csharp\obj\Debug\net8.0\refint\json-columnar-compression-csharp.dll
 C:\Users\USER\Stuff\json-columnar-compression-csharp\json-columnar-compression-csharp\obj\Debug\net8.0\json-columnar-compression-csharp.pdb

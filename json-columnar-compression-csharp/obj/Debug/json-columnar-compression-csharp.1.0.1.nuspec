@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>json-columnar-compression-csharp</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>Json Columnar Compression</title>
     <authors>Afuh Christian Forkoum</authors>
     <icon>Frame 1.jpg</icon>

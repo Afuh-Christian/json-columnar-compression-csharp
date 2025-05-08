@@ -36,7 +36,7 @@ namespace json_columnar_compression
                         {
                             if (obj[key] is JsonArray innerArray)
                             {
-                                columnArray.Add(innerArray.Count == 0 ? null : CompressJsonToColumnar(innerArray));
+                                columnArray.Add(innerArray.Count == 0 ? null : CompressJsonToColumnar(innerArray?.DeepClone()));
                             }
                             else
                             {
@@ -62,11 +62,11 @@ namespace json_columnar_compression
                 {
                     if (kvp.Value is JsonArray arr)
                     {
-                        newObj[kvp.Key] = CompressJsonToColumnar(arr);
+                        newObj[kvp.Key] = CompressJsonToColumnar(arr?.DeepClone());
                     }
                     else if (kvp.Value is JsonObject obj)
                     {
-                        newObj[kvp.Key] = CompressJsonToColumnar(obj);
+                        newObj[kvp.Key] = CompressJsonToColumnar(obj?.DeepClone());
                     }
                     else
                     {
@@ -136,11 +136,11 @@ namespace json_columnar_compression
 
                         if (cell is JsonArray innerArray)
                         {
-                            obj[keys[j]] = DecompressColumnarToJson(innerArray);
+                            obj[keys[j]] = DecompressColumnarToJson(innerArray?.DeepClone());
                         }
                         else if (cell is JsonObject innerObj)
                         {
-                            obj[keys[j]] = DecompressColumnarToJson(innerObj);
+                            obj[keys[j]] = DecompressColumnarToJson(innerObj?.DeepClone());
                         }
                         else
                         {
@@ -160,11 +160,11 @@ namespace json_columnar_compression
                 {
                     if (kvp.Value is JsonArray arr)
                     {
-                        result[kvp.Key] = DecompressColumnarToJson(arr);
+                        result[kvp.Key] = DecompressColumnarToJson(arr?.DeepClone());
                     }
                     else if (kvp.Value is JsonObject obj)
                     {
-                        result[kvp.Key] = DecompressColumnarToJson(obj);
+                        result[kvp.Key] = DecompressColumnarToJson(obj?.DeepClone());
                     }
                     else
                     {
