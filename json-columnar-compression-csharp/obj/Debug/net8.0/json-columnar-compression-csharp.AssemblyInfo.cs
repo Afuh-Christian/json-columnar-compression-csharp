@@ -17,7 +17,7 @@ using System.Reflection;
     "sion and reduced storage.\r\n- This approach is especially beneficial when working" +
     " with large datasets .\r\n- You can provide JSON in any structure or format.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.1.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.1+6295d92efa4fd62aa10af31e8fa3849dbe87b540")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.1+a71f52886f1524896dbf09729008b68f7796e972")]
 [assembly: System.Reflection.AssemblyProductAttribute("json-columnar-compression-csharp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("json-columnar-compression-csharp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.1.0")]

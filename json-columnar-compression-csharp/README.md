@@ -12,80 +12,102 @@
 ```c#
 
 
-// Not the corrent format in c# but you get the idea
-var jsonArray = [
-  {
-    "id": 1,
-    "name": "Alice",
-    "age": 28,
-    "city": "New York",
-    "children": [
-      { "id": 11, "name": "Anna", "age": 5 },
-      { "id": 12, "name": "Alex", "age": 7 }
-    ]
-  },
-  {
-    "id": 2,
-    "name": "Bob",
-    "age": 34,
-    "city": "Los Angeles",
-    "children": [{ "id": 21, "name": "Ben", "age": 8 }]
-  },
-  { "id": 3, "name": "Charlie", "age": 25, "city": "Chicago", "children": null }
-]
+// Example on a Middleware
 
 
 
-var compressed = JsonColumnarCompression.CompressJsonToColumnar(jsonArray)
 
-// console.log(compressed)
-// [
-//   ["id", [1, 2, 3]],
-//   ["name", ["Alice", "Bob", "Charlie"]],
-//   ["age", [28, 34, 25]],
-//   ["city", ["New York", "Los Angeles", "Chicago"]],
-//   [
-//     "children",
-//     [
-//       [
-//         ["id", [11, 12]],
-//         ["name", ["Anna", "Alex"]],
-//         ["age", [5, 7]]
-//       ],
-//       [
-//         ["id", [21]],
-//         ["name", ["Ben"]],
-//         ["age", [8]]
-//       ],
-//       null
-//     ]
-//   ]
-// ]
+using Microsoft.AspNetCore.Mvc.Filters;
+using Microsoft.AspNetCore.Mvc;
+using System.Text;
+using System.Text.Json;
+using json_columnar_compression;
+using System.Text.Json.Nodes;
+using System.Text.Json.Serialization.Metadata;
+using System.Text.Json.Serialization;
+
+namespace Cp.Api.CustomClasses.ControllerFilters
+{
 
 
-var decompressed = JsonColumnarCompression.DecompressColumnarToJson(compressed)
+    public class RequestResponseMiddleware
+    {
+        private readonly RequestDelegate _next;
 
-// console.log(decompressed)
-// [
-//   {
-//     "id": 1,
-//     "name": "Alice",
-//     "age": 28,
-//     "city": "New York",
-//     "children": [
-//       { "id": 11, "name": "Anna", "age": 5 },
-//       { "id": 12, "name": "Alex", "age": 7 }
-//     ]
-//   },
-//   {
-//     "id": 2,
-//     "name": "Bob",
-//     "age": 34,
-//     "city": "Los Angeles",
-//     "children": [{ "id": 21, "name": "Ben", "age": 8 }]
-//   },
-//   { "id": 3, "name": "Charlie", "age": 25, "city": "Chicago", "children": null }
-// ]
+        public RequestResponseMiddleware(RequestDelegate next)
+        {
+            _next = next;
+        }
+
+        public async Task InvokeAsync(HttpContext context)
+        {
+            // Enable buffering so we can read the body multiple times
+            context.Request.EnableBuffering();
+
+            using var reader = new StreamReader(
+                context.Request.Body,
+                encoding: Encoding.UTF8,
+                detectEncodingFromByteOrderMarks: false,
+                leaveOpen: true);
+
+            string body = await reader.ReadToEndAsync();
+            context.Request.Body.Position = 0;
+
+            if (!string.IsNullOrWhiteSpace(body))
+            {
+                try
+                {
+                    // apply message pack here ..... 
+                    JsonNode columnarJson = JsonNode.Parse(body); 
+                    JsonNode data = JsonColumnarCompression.DecompressColumnarToJson(columnarJson);
+
+                    var transformedJson = JsonSerializer.Serialize(data);
+                    var bytes = Encoding.UTF8.GetBytes(transformedJson);
+                    context.Request.Body = new MemoryStream(bytes);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error parsing request body: {ex.Message}");
+                    // Optionally let the request pass through unmodified
+                }
+            }
+            await _next(context);
+        }
+    }
+
+
+
+    public class WrapResponseFilter : IActionFilter
+    {
+        public void OnActionExecuting(ActionExecutingContext context)
+        {
+            // You can modify incoming request here
+        }
+
+        public void OnActionExecuted(ActionExecutedContext context)
+        {
+            if (context.Result is ObjectResult objectResult)
+            {
+
+                JsonNode json = JsonNode.Parse(JsonSerializer.Serialize(objectResult.Value ,
+                 new JsonSerializerOptions
+                 {
+                     PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+                 }));
+
+                var columnar = JsonColumnarCompression.CompressJsonToColumnar(json);
+                // apply message pack here ..... 
+
+                context.Result = new ObjectResult(columnar)
+                {
+                    StatusCode = objectResult.StatusCode
+                };
+
+            }
+        }
+
+        }
+}
 
 
 ```
